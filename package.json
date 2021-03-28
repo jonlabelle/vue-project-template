@@ -1,7 +1,20 @@
 {
-  "name": "vue-web-storm",
+  "name": "vue-project-template",
+  "description": "A Vue.js project (boilerplate) template.",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": "Jon LaBelle",
+  "repository": "jonlabelle/vue-project-template",
+  "bugs": {
+    "url": "https://github.com/jonlabelle/vue-project-template/issues"
+  },
+  "homepage": "https://github.com/jonlabelle/vue-project-template",
+  "keywords": [
+    "vue",
+    "project-template",
+    "template"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
