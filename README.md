@@ -1,8 +1,23 @@
 # Vue.js project template
 
+[![ci](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml)
+
 > A [Vue.js](https://vuejs.org) project (boilerplate) template.
 
 ## Project setup
+
+### Install Vue CLI
+
+The [Vue CLI](https://cli.vuejs.org/) is a globally installed npm package and
+provides the `vue` command in your terminal. It provides the ability to quickly
+scaffold a new project via vue create, or instantly prototype new ideas via vue
+serve.
+
+```bash
+npm install -g @vue/cli
+```
+
+### Install dependencies
 
 ```bash
 npm install
@@ -14,13 +29,13 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compile and minify for production
 
 ```bash
 npm run build
 ```
 
-### Lints and fixes files
+### Lint and fix files
 
 ```bash
 npm run lint
