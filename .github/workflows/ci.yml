@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - "*.md"
+      - ".editorconfig"
+
+  pull_request:
+    branches: [master]
+    paths-ignore:
+      - "*.md"
+      - ".editorconfig"
+
+  workflow_dispatch:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: ">=14"
+
+      - name: Install global @vue/cli
+        run: npm install -g @vue/cli
+
+      - name: Install package dependencies
+        run: npm ci
+
+      - name: Lint project
+        run: npm run lint
+
+      - name: Build dist files
+        run: npm run build
