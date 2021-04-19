@@ -1,11 +1,9 @@
 {
   "name": "vue-project-template",
-  "description": "A Vue.js project (boilerplate) template.",
   "version": "0.1.0",
   "private": true,
-  "license": "MIT",
+  "description": "A Vue.js project (boilerplate) template.",
   "author": "Jon LaBelle",
-  "repository": "jonlabelle/vue-project-template",
   "bugs": {
     "url": "https://github.com/jonlabelle/vue-project-template/issues"
   },
@@ -15,6 +13,8 @@
     "project-template",
     "template"
   ],
+  "license": "MIT",
+  "repository": "jonlabelle/vue-project-template",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -22,11 +22,13 @@
   },
   "dependencies": {
     "core-js": "^3.10.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
