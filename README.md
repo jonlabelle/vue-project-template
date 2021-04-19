@@ -1,6 +1,7 @@
 # Vue.js project template
 
 [![ci](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml)
+[![code quality](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-quality.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-quality.yml)
 
 > A [Vue.js](https://vuejs.org) project (boilerplate) template.
 
