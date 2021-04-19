@@ -74,6 +74,15 @@ npm install -g @vue/cli
 npm install
 ```
 
+### Using the GUI
+
+You can also create and manage projects using a graphical interface with the
+[`vue ui`] command:
+
+```bash
+vue ui
+```
+
 ### Compiles and hot-reloads for development
 
 ```bash
@@ -101,3 +110,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [`vue create`]: https://cli.vuejs.org/guide/creating-a-project.html#vue-create
 [`vue serve`]: https://cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
 [repository template]: https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
+[`vue ui`]: https://cli.vuejs.org/guide/creating-a-project.html#using-the-gui
