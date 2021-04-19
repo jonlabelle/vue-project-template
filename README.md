@@ -69,19 +69,19 @@ a new project via [`vue create`], or instantly prototype new ideas via [`vue ser
 npm install -g @vue/cli
 ```
 
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Using the GUI
+#### Using the GUI
 
 You can also create and manage projects using a graphical interface with the
 [`vue ui`] command:
 
 ```bash
 vue ui
+```
+
+### Install dependencies
+
+```bash
+npm install
 ```
 
 ### Compiles and hot-reloads for development
