@@ -9,7 +9,7 @@ module.exports = {
 
   // Setting this to false can speed up production builds
   // if you don't need source maps for production.
-  productionSourceMap: false,
+  productionSourceMap: false
 
   // Set to true to enable Subresource Integrity (SRI).
   // If you are hosting your built files on a CDN, it
