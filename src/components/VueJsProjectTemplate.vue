@@ -11,24 +11,6 @@ export default {
 </script>
 
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-
 blockquote {
   border: 1px solid rgba(66, 185, 131, 0.29);
   width: 50%;
@@ -40,6 +22,7 @@ blockquote {
 blockquote a {
   text-decoration: none;
   font-weight: 500;
+  color: #42b983;
 }
 
 blockquote a:hover {
