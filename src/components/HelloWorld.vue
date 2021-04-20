@@ -5,6 +5,7 @@
       For a guide and recipes on how to configure / customize this project,<br />
       check out the <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
+
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
@@ -77,5 +78,21 @@ li {
 }
 a {
   color: #42b983;
+}
+
+blockquote {
+  border: 1px solid rgba(66, 185, 131, 0.29);
+  width: 50%;
+  margin: 50px auto 20px;
+  padding: 5px;
+  background-color: rgba(44, 62, 80, 0.02);
+}
+
+blockquote a {
+  text-decoration: none;
+  font-weight: 500;
+}
+blockquote a:hover {
+  text-decoration: underline;
 }
 </style>
