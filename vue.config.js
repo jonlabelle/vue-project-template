@@ -14,12 +14,12 @@ module.exports = {
   // Set to true to enable Subresource Integrity (SRI).
   // If you are hosting your built files on a CDN, it
   // is a good idea to enable this for additional security.
-  integrity: false,
+  integrity: false
 
   // Whether to use the build of Vue core that includes
   // the runtime compiler. Setting it to true will allow
   // you to use the template option in Vue components,
   // but will incur around an extra 10kb payload for
   // your app.
-  runtimeCompiler: true
+  // runtimeCompiler: true
 };
