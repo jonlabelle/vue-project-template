@@ -1,9 +1,14 @@
 # Vue.js project template
 
 [![ci](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml)
+[![cd](https://github.com/jonlabelle/vue-project-template/actions/workflows/azure-static-web-apps.yml/badge.svg?branch=master)](https://github.com/jonlabelle/vue-project-template/actions/workflows/azure-static-web-apps.yml)
 [![code quality](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-quality.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-quality.yml)
 
 > A [Vue.js](https://vuejs.org) project (boilerplate) template.
+
+## Demo
+
+Checkout the built [static site] from this template.
 
 ## Usage
 
@@ -29,7 +34,7 @@ to replace the following configuration items with your own.
     "vue",
     "project-template",
     "template"
-  ],
+  ]
 }
 ```
 
@@ -112,3 +117,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [`vue serve`]: https://cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
 [repository template]: https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
 [`vue ui`]: https://cli.vuejs.org/guide/creating-a-project.html#using-the-gui
+[static site]: https://kind-hill-006cd6310.azurestaticapps.net
