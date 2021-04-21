@@ -1,6 +1,6 @@
 <template>
   <blockquote>
-    <p>Created from <a href="https://github.com/jonlabelle/vue-project-template" target="_blank" rel="noopener">Vue.js project template</a> on GitHub.</p>
+    <p>Created using <a href="https://github.com/jonlabelle/vue-project-template" target="_blank" rel="noopener">jonlabelle/vue-project-template</a>.</p>
   </blockquote>
 </template>
 
