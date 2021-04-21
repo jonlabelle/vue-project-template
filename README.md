@@ -1,7 +1,7 @@
 # Vue.js project template
 
 [![ci](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml)
-[![cd](https://github.com/jonlabelle/vue-project-template/actions/workflows/azure-static-web-apps.yml/badge.svg?branch=master)](https://github.com/jonlabelle/vue-project-template/actions/workflows/azure-static-web-apps.yml)
+[![cd](https://github.com/jonlabelle/vue-project-template/actions/workflows/cd.yml/badge.svg?branch=master)](https://github.com/jonlabelle/vue-project-template/actions/workflows/cd.yml)
 [![code quality](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-quality.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-quality.yml)
 
 > A [Vue.js](https://vuejs.org) project (boilerplate) template.
