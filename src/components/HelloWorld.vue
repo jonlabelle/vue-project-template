@@ -79,20 +79,4 @@ li {
 a {
   color: #42b983;
 }
-
-blockquote {
-  border: 1px solid rgba(66, 185, 131, 0.29);
-  width: 50%;
-  margin: 50px auto 20px;
-  padding: 5px;
-  background-color: rgba(44, 62, 80, 0.02);
-}
-
-blockquote a {
-  text-decoration: none;
-  font-weight: 500;
-}
-blockquote a:hover {
-  text-decoration: underline;
-}
 </style>
