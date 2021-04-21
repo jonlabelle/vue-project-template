@@ -5,15 +5,15 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
-    <VueJsProjectTemplate />
+    <created-using />
   </div>
 </template>
 
 <script>
-import VueJsProjectTemplate from "@/components/VueJsProjectTemplate";
+import CreatedUsing from "@/components/CreatedUsing";
 
 export default {
-  components: { VueJsProjectTemplate }
+  components: { CreatedUsing }
 };
 </script>
 
