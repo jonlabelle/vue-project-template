@@ -6,15 +6,20 @@
       check out the <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
 
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a>
-      </li>
-      <li>
-        <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a>
-      </li>
-    </ul>
+    <h3></h3>
+
+    <!--    <sl-details :summary.prop="Installation Summary">-->
+    <sl-details summary="Installation Summary">
+      <ul>
+        <li>
+          <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a>
+        </li>
+        <li>
+          <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a>
+        </li>
+      </ul>
+    </sl-details>
+
     <h3>Essential Links</h3>
     <ul>
       <li>
@@ -55,6 +60,9 @@
 </template>
 
 <script>
+import SlDetails from "@shoelace-style/shoelace/dist/components/details/details";
+import SlIcon from "@shoelace-style/shoelace/dist/components/icon/icon.js";
+
 export default {
   name: "HelloWorld",
   props: {

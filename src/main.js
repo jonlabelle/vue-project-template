@@ -2,6 +2,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 
+//
+// Shoelace web components (https://shoelace.style/getting-started/usage?id=vue)
+import "@shoelace-style/shoelace/dist/themes/base.css";
+Vue.config.ignoredElements = [/^sl-/];
+import ShoelaceModelDirective from "@shoelace-style/vue-sl-model";
+Vue.use(ShoelaceModelDirective);
+
 Vue.config.productionTip = false;
 
 new Vue({

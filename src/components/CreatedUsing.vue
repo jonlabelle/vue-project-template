@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .created-using {
   border: 1px solid rgba(66, 185, 131, 0.29);
   width: 50%;
