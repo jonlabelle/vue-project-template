@@ -41,5 +41,5 @@ export default {
 <style lang="scss">
 @import "./scss/main.scss";
 
-@include sticky-footer(40px, "#wrapper", "#container", "#footer");
+@include sticky-footer(40px, #wrapper, #container, #footer);
 </style>
