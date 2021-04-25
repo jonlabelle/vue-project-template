@@ -24,12 +24,8 @@ module.exports = {
   // runtimeCompiler: true
 
   css: {
-    loaderOptions: {
-      sass: {
-        sassOptions: {
-          includePaths: ["./node_modules"]
-        }
-      }
-    }
+    // Don't require css modules to have filename ending
+    // with '.module.(css|less|sass|scss|styl)'.
+    requireModuleExtension: false
   }
 };
