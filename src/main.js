@@ -1,5 +1,4 @@
 import "@shoelace-style/shoelace/dist/themes/base.css";
-import "./styles/base.scss";
 
 import Vue from "vue";
 import App from "./App.vue";
