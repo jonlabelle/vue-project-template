@@ -1,0 +1,91 @@
+/*
+ * Typography
+ * ========================================================================== */
+
+//html,
+//body {
+//  font-family: $body-font;
+//}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  //color: $text-color;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  text-rendering: optimizeLegibility;
+
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  scroll-behavior: smooth;
+}
+
+//h1,
+//h2,
+//h3,
+//h4,
+//h5,
+//h6 {
+//  font-family: $header-font;
+//}
+
+//button::-moz-focus-inner {
+//  border: 0;
+//}
+
+//html,
+//button,
+//input,
+//select,
+//textarea {
+//  color: $text-color;
+//}
+
+//a {
+//  color: var(--sl-color-primary-500);
+//  text-decoration: none;
+//
+//  &:visited {
+//    color: var(--sl-color-primary-500);
+//    text-decoration: none;
+//    outline: 0;
+//  }
+//
+//  &:focus,
+//  &:active,
+//  &:hover {
+//    color: var(--sl-color-primary-500);
+//    text-decoration: underline;
+//    outline: 0;
+//  }
+//}
+
+//i,
+//em {
+//  font-style: normal;
+//}
+
+//input {
+//  &:focus {
+//    outline: none;
+//  }
+//}
+
+//b,
+//strong {
+//  font-weight: 700;
+//}
+
+/**
+ * Text Selection
+ */
+
+// ::selections

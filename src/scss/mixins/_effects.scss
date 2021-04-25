@@ -1,0 +1,13 @@
+/*
+ * Effects
+ * ========================================================================== */
+
+// @src: https://github.com/andreymatin/scss-mixins/blob/master/src/scss/_mixins.scss
+
+@mixin blur($val) {
+  @if $val {
+    backdrop-filter: blur($val);
+  } @else {
+    backdrop-filter: blur(3px);
+  }
+}

@@ -28,13 +28,13 @@ module.exports = {
   pluginOptions: {
     "style-resources-loader": {
       preProcessor: "scss",
-      patterns: [path.resolve(__dirname, "./assets/styles/global.scss")]
+      patterns: [path.resolve(__dirname, "./scss/main.scss")]
     }
-  },
-
-  css: {
-    // Don't require css modules to have filename ending
-    // with '.module.(css|less|sass|scss|styl)'.
-    requireModuleExtension: false
   }
+
+  //css: {
+  // Don't require css modules to have filename ending
+  // with '.module.(css|less|sass|scss|styl)'.
+  //requireModuleExtension: false
+  //}
 };

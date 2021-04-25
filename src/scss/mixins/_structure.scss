@@ -1,0 +1,14 @@
+/*
+ * Structure
+ * ========================================================================== */
+
+/**
+ * Grid Centering
+ *
+ * @src: https://github.com/andreymatin/scss-mixins/blob/master/src/scss/_mixins.scss
+ */
+
+@mixin grid-center {
+  display: grid;
+  place-items: center;
+}
