@@ -26,13 +26,13 @@
     "@shoelace-style/vue-sl-model": "^1.0.0",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta3",
-    "core-js": "^3.10.2",
+    "core-js": "^3.11.0",
     "vue": "^2.6.12",
     "vue-router": "^3.5.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
     "@vue/babel-preset-app": "^4.5.12",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
