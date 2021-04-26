@@ -4,3 +4,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+    # Disable all pull requests for npm dependencies
+    open-pull-requests-limit: 0
