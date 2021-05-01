@@ -1,0 +1,15 @@
+# directories
+/.git/
+/node_modules/
+/.github/
+/tmp/
+/.idea/
+/.vscode/
+
+# files
+Dockerfile*
+**/*.md
+LICENSE.txt
+.prettierrc
+.*ignore
+npm-debug.log

@@ -19,7 +19,9 @@
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "build-dev": "vue-cli-service build --mode development",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docker-build": "docker build --tag jonlabelle/vue-project-template .",
+    "docker-run": "docker run -it -p 8080:80 --rm --name vue-project-template jonlabelle/vue-project-template"
   },
   "dependencies": {
     "@shoelace-style/shoelace": "^2.0.0-beta.39",
@@ -38,6 +40,7 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.11",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
