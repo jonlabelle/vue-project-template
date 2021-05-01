@@ -5,6 +5,7 @@
 /tmp/
 /.idea/
 /.vscode/
+/dist/
 
 # files
 Dockerfile*
