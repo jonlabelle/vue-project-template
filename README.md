@@ -107,6 +107,14 @@ npm run build
 npm run lint
 ```
 
+### Docker
+
+To run in Docker:
+
+1. Build the image: `npm run docker-build`
+2. Start a container: `npm run docker-run`
+3. Open your browser to <http://localhost:8080>
+  
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).

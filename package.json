@@ -21,7 +21,7 @@
     "build-dev": "vue-cli-service build --mode development",
     "lint": "vue-cli-service lint",
     "docker-build": "docker build --tag vue-project-template:dev-latest .",
-    "docker-run": "docker run -it --rm --name vue-project-template -p 8080:80 jonlabelle/vue-project-template:dev-latest"
+    "docker-run": "docker run -it --rm --name vue-project-template -p 8080:80 vue-project-template:dev-latest"
   },
   "dependencies": {
     "axios": "^0.21.1",
