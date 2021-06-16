@@ -30,7 +30,7 @@ jobs:
           check-latest: true
 
       - name: Install global @vue/cli
-        run: npm install -g @vue/cli
+        run: npm install -g @vue/cli@5.0.0-beta.2
 
       - name: Install package dependencies
         run: npm ci
