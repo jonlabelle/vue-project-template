@@ -113,8 +113,9 @@ To run in Docker:
 
 1. Build the image: `npm run docker-build`
 2. Start a container: `npm run docker-run`
-3. Open your browser to <http://localhost:8080>
-  
+    - or run in [detached mode](https://docs.docker.com/engine/reference/run/#detached--d): `npm run docker-run-detach`
+3. Open browser to <http://localhost:8080>
+
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
