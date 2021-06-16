@@ -5,16 +5,17 @@ on:
     branches:
       - master
 
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - master
+#  pull_request:
+#    types: [opened, synchronize, reopened, closed]
+#    branches:
+#      - master
 
   workflow_dispatch:
 
 jobs:
   build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    if: github.event_name != 'pull_request'
+#    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
 
     name: Build and Deploy
@@ -59,14 +60,14 @@ jobs:
           skip_app_build: true # Whether to Skip app build. true to bypass automatic build process and just deploy the app that was built in a previous step. (optional)
           ###### End of Repository/Build Configurations ######
 
-  close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    name: Close Pull Request
-    steps:
-      - name: Close Pull Request
-        id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v0.0.1-preview
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          action: "close"
+#  close_pull_request_job:
+#    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+#    runs-on: ubuntu-latest
+#    name: Close Pull Request
+#    steps:
+#      - name: Close Pull Request
+#        id: closepullrequest
+#        uses: Azure/static-web-apps-deploy@v0.0.1-preview
+#        with:
+#          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+#          action: "close"

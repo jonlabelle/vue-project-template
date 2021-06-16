@@ -1,0 +1,19 @@
+/**
+ * Main CSS
+ */
+
+// Hat tip: https://github.com/andreymatin/html-initial-bundle/tree/master/src/scss
+
+@import "vendor/bootstrap";
+
+@import "variables";
+@import "root";
+@import "typography";
+@import "utils";
+
+@import "mixins/hide";
+@import "mixins/content_blocks";
+
+@import "header";
+@import "footer";
+@import "nav";

@@ -1,0 +1,46 @@
+/*
+ * Content Blocks
+ * ========================================================================== */
+
+// Flex Centering
+// @src: https://github.com/andreymatin/scss-mixins/blob/master/src/scss/_mixins.scss
+@mixin flex-center($width) {
+  @if $width {
+    width: $width;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+}
+
+// Offscreen Block
+// @src: https://github.com/andreymatin/scss-mixins/blob/master/src/scss/_mixins.scss
+@mixin offscreen {
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+}
+
+@mixin hover {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+// Imposter. The imposter creates a container where all child elements
+// are positioned in the center of it.
+// @src: https://github.com/andreymatin/scss-mixins/blob/master/src/scss/_mixins.scss
+@mixin imposter($offset) {
+  width: 100vw;
+  height: 100vh;
+
+  @if $offset {
+    height: calc(100vh - #{$offset});
+  }
+
+  //@include flex-center();
+}

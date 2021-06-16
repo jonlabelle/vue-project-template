@@ -1,3 +1,5 @@
+//const path = require("path");
+
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
  * @see https://cli.vuejs.org/config/
@@ -14,7 +16,7 @@ module.exports = {
   // Set to true to enable Subresource Integrity (SRI).
   // If you are hosting your built files on a CDN, it
   // is a good idea to enable this for additional security.
-  integrity: false
+  //integrity: false,
 
   // Whether to use the build of Vue core that includes
   // the runtime compiler. Setting it to true will allow
@@ -22,4 +24,17 @@ module.exports = {
   // but will incur around an extra 10kb payload for
   // your app.
   // runtimeCompiler: true
+
+  //pluginOptions: {
+  //  "style-resources-loader": {
+  //    preProcessor: "scss",
+  //    patterns: [path.resolve(__dirname, "./scss/main.scss")],
+  //  },
+  //},
+
+  //css: {
+  // Don't require css modules to have filename ending
+  // with '.module.(css|less|sass|scss|styl)'.
+  //requireModuleExtension: false
+  //}
 };
