@@ -29,6 +29,14 @@ jobs:
           node-version: ">=14"
           check-latest: true
 
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install global @vue/cli
         run: npm install -g @vue/cli@5.0.0-beta.2
 

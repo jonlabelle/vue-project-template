@@ -5,17 +5,11 @@ on:
     branches:
       - master
 
-#  pull_request:
-#    types: [opened, synchronize, reopened, closed]
-#    branches:
-#      - master
-
   workflow_dispatch:
 
 jobs:
   build_and_deploy_job:
     if: github.event_name != 'pull_request'
-#    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
 
     name: Build and Deploy
@@ -30,6 +24,14 @@ jobs:
         with:
           node-version: ">=14"
           check-latest: true
+
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Install global @vue/cli
         run: npm install -g @vue/cli@5.0.0-beta.2
@@ -47,7 +49,8 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v0.0.1-preview
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          azure_static_web_apps_api_token:
+            ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           skip_deploy_on_missing_secrets: true
@@ -59,15 +62,3 @@ jobs:
           output_location: "" # Built app content directory. Set `output_location` to empty if `skip_app_build` is true. (optional)
           skip_app_build: true # Whether to Skip app build. true to bypass automatic build process and just deploy the app that was built in a previous step. (optional)
           ###### End of Repository/Build Configurations ######
-
-#  close_pull_request_job:
-#    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-#    runs-on: ubuntu-latest
-#    name: Close Pull Request
-#    steps:
-#      - name: Close Pull Request
-#        id: closepullrequest
-#        uses: Azure/static-web-apps-deploy@v0.0.1-preview
-#        with:
-#          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-#          action: "close"
