@@ -2,8 +2,6 @@
  * Hide
  * ========================================================================== */
 
-// @src: https://github.com/shoelace-style/shoelace/blob/next/src/styles/mixins/hide.scss
-
 // A transition-friendly alternative to `display: none` for hiding content
 @mixin hidden {
   position: absolute;

@@ -1,4 +1,4 @@
-const path = require("path");
+//const path = require("path");
 
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
@@ -25,12 +25,12 @@ module.exports = {
   // your app.
   // runtimeCompiler: true
 
-  pluginOptions: {
-    "style-resources-loader": {
-      preProcessor: "scss",
-      patterns: [path.resolve(__dirname, "./scss/main.scss")]
-    }
-  }
+  //pluginOptions: {
+  //  "style-resources-loader": {
+  //    preProcessor: "scss",
+  //    patterns: [path.resolve(__dirname, "./scss/main.scss")],
+  //  },
+  //},
 
   //css: {
   // Don't require css modules to have filename ending

@@ -4,10 +4,15 @@
 
 // Flex Centering
 // @src: https://github.com/andreymatin/scss-mixins/blob/master/src/scss/_mixins.scss
-@mixin flex-center {
+@mixin flex-center($width) {
+  @if $width {
+    width: $width;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
+  resize: both;
 }
 
 // Offscreen Block
@@ -37,5 +42,5 @@
     height: calc(100vh - #{$offset});
   }
 
-  @include flex-center();
+  //@include flex-center();
 }
