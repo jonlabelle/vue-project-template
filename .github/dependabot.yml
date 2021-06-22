@@ -1,9 +1,8 @@
 version: 2
+
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
-
-    # Disable all pull requests for npm dependencies
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 0 # Set to 0 to disable pull requests for npm dependencies
