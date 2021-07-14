@@ -126,4 +126,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [`vue serve`]: https://cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
 [repository template]: https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
 [`vue ui`]: https://cli.vuejs.org/guide/creating-a-project.html#using-the-gui
-[static site]: https://kind-hill-006cd6310.azurestaticapps.net
+[static site]: https://vue-project-template.jonlabelle.com
