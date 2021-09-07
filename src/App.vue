@@ -5,7 +5,7 @@
       <created-using />
 
       <div class="footer">
-        <p class="footer__copy">Copyright (C) 2021.</p>
+        <p class="footer__copy">Copyright &copy; {{ year }}.</p>
       </div>
     </div>
   </div>
@@ -16,6 +16,11 @@ import CreatedUsing from "@/components/CreatedUsing";
 
 export default {
   components: { CreatedUsing },
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    };
+  },
 };
 </script>
 
