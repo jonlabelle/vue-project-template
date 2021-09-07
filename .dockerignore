@@ -1,16 +1,18 @@
 # directories
+/.docker/
 /.git/
-/node_modules/
 /.github/
-/tmp/
 /.idea/
+/.vs/
 /.vscode/
 /dist/
+/node_modules/
+/tmp/
 
 # files
-Dockerfile*
 **/*.md
-LICENSE.txt
-.prettierrc
 .*ignore
+.prettierrc
+Dockerfile*
+LICENSE.txt
 npm-debug.log
