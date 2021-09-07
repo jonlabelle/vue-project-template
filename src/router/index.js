@@ -28,11 +28,17 @@ const routes = [
   },
   {
     path: "*",
-    redirect: { name: "404", params: { resource: "page" } },
+    redirect: {
+      name: "404",
+      params: {
+        resource: "page",
+      },
+    },
   },
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes,
 });
 
