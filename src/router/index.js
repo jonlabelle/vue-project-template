@@ -1,9 +1,6 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import NotFound from "../views/NotFound.vue";
-
-Vue.use(VueRouter);
 
 const routes = [
   {
@@ -26,20 +23,22 @@ const routes = [
     component: NotFound,
     props: true,
   },
-  {
-    path: "*",
-    redirect: {
-      name: "404",
-      params: {
-        resource: "page",
-      },
-    },
-  },
+  //{
+  //  path: "*",
+  //  redirect: {
+  //    name: "404",
+  //    params: {
+  //      resource: "page",
+  //    },
+  //  },
+  //},
+  { path: "/:pathMatch(.*)*", name: "404", component: NotFound },
+  { path: "/:pathMatch(.*)", name: "404", component: NotFound },
 ];
 
-const router = new VueRouter({
-  mode: "history",
-  routes,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes: routes,
 });
 
 export default router;

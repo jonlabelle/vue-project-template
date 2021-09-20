@@ -2,11 +2,21 @@
 
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
- * @see https://cli.vuejs.org/config/
+ * @see https://next.cli.vuejs.org/config/
  */
 module.exports = {
-  // Directory (relative to outputDir) to nest generated
-  // static assets (js, css, img, fonts) under.
+  // By default babel-loader ignores all files inside node_modules. You can
+  // enable this option to avoid unexpected untranspiled code from third-party
+  // dependencies.
+  //
+  // Transpiling all the dependencies could slow down the build process, though.
+  // If build performance is a concern, you can explicitly transpile only some
+  // of the dependenciesby passing an array of package names or name patterns to
+  // this option.
+  transpileDependencies: true,
+
+  // A directory (relative to outputDir) to nest generated static assets
+  // (js, css, img, fonts) under.
   assetsDir: "assets",
 
   // Setting this to false can speed up production builds

@@ -3,5 +3,16 @@
   "singleQuote": false,
   "tabWidth": 2,
   "trailingComma": "es5",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "bracketSameLine": true,
+  "arrowParens": "always",
+  "vueIndentScriptAndStyle": true,
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "options": {
+        "printWidth": 240
+      }
+    }
+  ]
 }

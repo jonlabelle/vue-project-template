@@ -30,11 +30,7 @@ to replace the following configuration items with your own.
     "url": "https://github.com/jonlabelle/vue-project-template/issues"
   },
   "homepage": "https://github.com/jonlabelle/vue-project-template",
-  "keywords": [
-    "vue",
-    "project-template",
-    "template"
-  ]
+  "keywords": ["vue", "project-template", "template"]
 }
 ```
 
@@ -68,7 +64,8 @@ Copyright (c) Jon LaBelle
 
 The [Vue CLI] \(`@vue/cli`\) is a globally installed [npm package] and provides
 the `vue` command in your terminal. It provides the ability to quickly scaffold
-a new project via [`vue create`], or instantly prototype new ideas via [`vue serve`].
+a new project via [`vue create`], or instantly prototype new ideas via [`vue
+serve`].
 
 ```bash
 npm install -g @vue/cli
@@ -113,7 +110,9 @@ To run in Docker:
 
 1. Build the image: `npm run docker-build`
 2. Start a container: `npm run docker-run`
-    - or run in [detached mode](https://docs.docker.com/engine/reference/run/#detached--d): `npm run docker-run-detach`
+   - or run in
+     [detached mode](https://docs.docker.com/engine/reference/run/#detached--d):
+     `npm run docker-run-detach`
 3. Open browser to <http://localhost:8080>
 
 ### Customize configuration
@@ -121,9 +120,11 @@ To run in Docker:
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 [npm package]: https://www.npmjs.com/package/@vue/cli
-[Vue CLI]: https://cli.vuejs.org/
+[vue cli]: https://cli.vuejs.org/
 [`vue create`]: https://cli.vuejs.org/guide/creating-a-project.html#vue-create
-[`vue serve`]: https://cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
-[repository template]: https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
+[`vue serve`]:
+  https://cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
+[repository template]:
+  https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
 [`vue ui`]: https://cli.vuejs.org/guide/creating-a-project.html#using-the-gui
 [static site]: https://vue-project-template.jonlabelle.com
