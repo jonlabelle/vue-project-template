@@ -23,17 +23,14 @@ const routes = [
     component: NotFound,
     props: true,
   },
-  //{
-  //  path: "*",
-  //  redirect: {
-  //    name: "404",
-  //    params: {
-  //      resource: "page",
-  //    },
-  //  },
-  //},
-  { path: "/:pathMatch(.*)*", name: "404", component: NotFound },
-  { path: "/:pathMatch(.*)", name: "404", component: NotFound },
+  {
+    // Catch all / 404 Not found Route
+    // See: https://next.router.vuejs.org/guide/essentials/dynamic-matching.html#catch-all-404-not-found-route
+    path: "/:pathMatch(.*)*",
+    name: "404",
+    component: NotFound,
+    props: { resource: "page" },
+  },
 ];
 
 const router = createRouter({

@@ -18,6 +18,7 @@
     background-color: rgba(44, 62, 80, 0.02);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
     width: 80%;
 
     &__copy {
