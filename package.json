@@ -17,7 +17,7 @@
   "repository": "jonlabelle/vue-project-template",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --mode production",
     "build-dev": "vue-cli-service build --mode development",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
