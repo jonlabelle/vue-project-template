@@ -6,7 +6,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home,
+    component: Home
   },
   {
     path: "/about",
@@ -15,13 +15,13 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
     path: "/404",
     name: "404",
     component: NotFound,
-    props: true,
+    props: true
   },
   {
     // Catch all / 404 Not found Route
@@ -29,13 +29,13 @@ const routes = [
     path: "/:pathMatch(.*)*",
     name: "404",
     component: NotFound,
-    props: { resource: "page" },
-  },
+    props: { resource: "page" }
+  }
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes: routes,
+  routes: routes
 });
 
 export default router;

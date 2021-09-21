@@ -11,9 +11,9 @@
       year: {
         type: Number,
         required: false,
-        default: new Date().getFullYear(),
-      },
-    },
+        default: new Date().getFullYear()
+      }
+    }
   };
 </script>
 

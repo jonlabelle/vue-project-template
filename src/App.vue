@@ -15,9 +15,9 @@
 
     data() {
       return {
-        year: new Date().getFullYear(),
+        year: new Date().getFullYear()
       };
-    },
+    }
   };
 </script>
 

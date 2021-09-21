@@ -17,7 +17,7 @@ module.exports = {
 
   // A directory (relative to outputDir) to nest generated static assets
   // (js, css, img, fonts) under.
-  assetsDir: "assets",
+  assetsDir: "assets"
 
   // Setting this to false can speed up production builds
   // if you don't need source maps for production.
