@@ -103,14 +103,9 @@ To run the site in Docker:
 2. Start the container: `npm run docker-run`
 3. Open your browser to: <http://localhost:8080>
 
-### Vue CLI Configuration
-
-See [Configuration Reference](https://next.cli.vuejs.org/config/).
-
 [npm package]: https://www.npmjs.com/package/@vue/cli
 [vue cli]: https://next.cli.vuejs.org/
 [`vue create`]: https://next.cli.vuejs.org/guide/creating-a-project.html#vue-create
 [`vue serve`]: https://next.cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
 [repository template]: https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
-[`vue ui`]: https://next.cli.vuejs.org/guide/creating-a-project.html#using-the-gui
 [static site]: https://vue-project-template.jonlabelle.com
