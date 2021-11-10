@@ -1,10 +1,12 @@
+const { defineConfig } = require("@vue/cli-service");
+
 //const path = require("path");
 
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
  * @see https://next.cli.vuejs.org/config/
  */
-module.exports = {
+module.exports = defineConfig({
   //
   // By default babel-loader ignores all files inside node_modules. You can
   // enable this option to avoid unexpected untranspiled code from third-party
@@ -89,4 +91,4 @@ module.exports = {
     //  }
     //}
   }
-};
+});

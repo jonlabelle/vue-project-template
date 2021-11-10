@@ -26,7 +26,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2
         with:
-          node-version: ">=14"
+          node-version: ">=16"
           check-latest: true
 
       - name: Cache node_modules
@@ -37,7 +37,7 @@ jobs:
           restore-keys: ${{ runner.os }}-node-
 
       - name: Install global @vue/cli
-        run: npm install -g @vue/cli@5.0.0-beta.7
+        run: npm install -g @vue/cli@5.0.0-rc.0
 
       - name: Install package dependencies
         run: npm ci

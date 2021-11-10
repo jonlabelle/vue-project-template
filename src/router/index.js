@@ -1,26 +1,27 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
-import NotFound from "../views/NotFound.vue";
+
+import HomeView from "../views/HomeView.vue";
+import NotFoundView from "../views/NotFoundView.vue";
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "home",
+    component: HomeView
   },
   {
     path: "/about",
-    name: "About",
+    name: "about",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+      import(/* webpackChunkName: "about" */ "../views/AboutView.vue")
   },
   {
     path: "/404",
     name: "404",
-    component: NotFound,
+    component: NotFoundView,
     props: true
   },
   {
@@ -28,7 +29,7 @@ const routes = [
     // See: https://next.router.vuejs.org/guide/essentials/dynamic-matching.html#catch-all-404-not-found-route
     path: "/:pathMatch(.*)*",
     name: "404",
-    component: NotFound,
+    component: NotFoundView,
     props: { resource: "page" }
   }
 ];
