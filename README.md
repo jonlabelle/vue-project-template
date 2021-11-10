@@ -60,7 +60,7 @@ Copyright (c) Jon LaBelle
 
 ## Project setup
 
-### Install Vue CLI
+### Install @vue/cli
 
 The [Vue CLI] \(`@vue/cli`\) is a globally installed [npm package] and provides
 the `vue` command in your terminal. It provides the ability to quickly scaffold
@@ -68,16 +68,7 @@ a new project via [`vue create`], or instantly prototype new ideas via [`vue
 serve`].
 
 ```bash
-npm install -g @vue/cli
-```
-
-#### Using the GUI
-
-You can also create and manage projects using a graphical interface with the
-[`vue ui`] command:
-
-```bash
-vue ui
+npm install -g @vue/cli@5.0.0-rc.0
 ```
 
 ### Install dependencies
@@ -106,25 +97,20 @@ npm run lint
 
 ### Docker
 
-To run in Docker:
+To run the site in Docker:
 
 1. Build the image: `npm run docker-build`
-2. Start a container: `npm run docker-run`
-   - or run in
-     [detached mode](https://docs.docker.com/engine/reference/run/#detached--d):
-     `npm run docker-run-detach`
-3. Open browser to <http://localhost:8080>
+2. Start the container: `npm run docker-run`
+3. Open your browser to: <http://localhost:8080>
 
-### Customize configuration
+### Vue CLI Configuration
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Configuration Reference](https://next.cli.vuejs.org/config/).
 
 [npm package]: https://www.npmjs.com/package/@vue/cli
-[vue cli]: https://cli.vuejs.org/
-[`vue create`]: https://cli.vuejs.org/guide/creating-a-project.html#vue-create
-[`vue serve`]:
-  https://cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
-[repository template]:
-  https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
-[`vue ui`]: https://cli.vuejs.org/guide/creating-a-project.html#using-the-gui
+[vue cli]: https://next.cli.vuejs.org/
+[`vue create`]: https://next.cli.vuejs.org/guide/creating-a-project.html#vue-create
+[`vue serve`]: https://next.cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
+[repository template]: https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
+[`vue ui`]: https://next.cli.vuejs.org/guide/creating-a-project.html#using-the-gui
 [static site]: https://vue-project-template.jonlabelle.com
