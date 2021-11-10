@@ -8,7 +8,7 @@
 
 <script>
   import CreatedUsing from "@/components/CreatedUsing";
-  import FooterComponent from "@/FooterComponent";
+  import FooterComponent from "@/components/FooterComponent";
 
   export default {
     components: { FooterComponent, CreatedUsing },
