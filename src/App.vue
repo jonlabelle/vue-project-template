@@ -1,5 +1,6 @@
 <template>
   <div class="imposter">
+    <NotificationContainer />
     <router-view />
     <created-using />
     <FooterComponent :year="year" />
@@ -9,14 +10,22 @@
 <script>
   import CreatedUsing from "@/components/CreatedUsing";
   import FooterComponent from "@/components/FooterComponent";
+  import NotificationContainer from "@/components/NotificationContainer.vue";
 
   export default {
-    components: { FooterComponent, CreatedUsing },
-
+    components: { FooterComponent, CreatedUsing, NotificationContainer },
     data() {
       return {
         year: new Date().getFullYear()
       };
+    },
+    mounted() {
+      const notification = {
+        type: "success",
+        message: "Example notification that will dissappear after 5 seconds."
+      };
+
+      this.$store.dispatch("notification/add", notification, { root: true });
     }
   };
 </script>
