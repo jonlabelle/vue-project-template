@@ -37,7 +37,7 @@ jobs:
           restore-keys: ${{ runner.os }}-node-
 
       - name: Install global @vue/cli
-        run: npm install -g @vue/cli@5.0.0-rc.0
+        run: npm install -g @vue/cli@5.0.0-rc.1
 
       - name: Install package dependencies
         run: npm ci
