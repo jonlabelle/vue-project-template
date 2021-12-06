@@ -36,6 +36,22 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+
+  // Preserve the scrolling position of history entries
+  // https://next.router.vuejs.org/guide/advanced/scroll-behavior.html
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else if (to.hash) {
+      return {
+        el: to.hash,
+        //top: document.querySelector("#app").offsetHeight,
+        behavior: "smooth"
+      };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
   routes: routes
 });
 
