@@ -31,9 +31,13 @@
   "navigationFallback": {
     "rewrite": "index.html",
     "exclude": [
-      "/images/*.{png,jpg,gif,ico}",
+      "/images/*.{png,jpg,gif,ico,svg}",
+      "/img/*.{png,jpg,gif,ico,svg}",
+      "/assets/images/*.{png,jpg,gif,ico,svg}",
       "/*.{css,scss,js}",
-      "/assets/images/*.{png,jpg,gif,ico}"
+      "/assets/*.{css,scss,js}",
+      "/assets/css/*.{css,scss,js}",
+      "/assets/js/*.{css,scss,js}"
     ]
   }
 }
