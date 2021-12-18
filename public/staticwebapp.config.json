@@ -1,0 +1,39 @@
+// ----------------------------------------------------------------------------
+// ## Handle fallback routes
+//
+// You see a 404 error when you refresh the page because the browser sends a
+// request to the hosting platform to serve /products. There's no page on the
+// server named products to serve. Fortunately, it's easy to resolve this by
+// creating a fallback route. A fallback route is a route that matches all
+// unmatched page requests to the server.
+//
+// Azure Static Web Apps supports custom routing rules defined in an optional
+// staticwebapp.config.json file located in the app's build output folder.
+//
+// You can configure your app to use rules that implement a fallback route as
+// shown in the following example that uses a path wildcard with file filter.
+//
+// This rule tells Azure Static Web Apps to serve index.html when a request for
+// an resource is not found, excluding the images and CSS files shown in the
+// exclude expression.
+//
+// ## Route file location
+//
+// Azure Static Web Apps expects your staticwebapp.config.json file to be in the
+// output_location by default. If your build process copies your
+// "staticwebapp.config.json" file to the output_location, then there is nothing
+// else you need to do.
+//
+// The "staticwebapp.config.json" file is located in the folder
+// "vue-app/public".
+// ----------------------------------------------------------------------------
+{
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": [
+      "/images/*.{png,jpg,gif,ico}",
+      "/*.{css,scss,js}",
+      "/assets/images/*.{png,jpg,gif,ico}"
+    ]
+  }
+}
