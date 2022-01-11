@@ -105,10 +105,7 @@ To run the site in Docker:
 
 [npm package]: https://www.npmjs.com/package/@vue/cli
 [vue cli]: https://next.cli.vuejs.org/
-[`vue create`]:
-  https://next.cli.vuejs.org/guide/creating-a-project.html#vue-create
-[`vue serve`]:
-  https://next.cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
-[repository template]:
-  https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
+[`vue create`]: https://next.cli.vuejs.org/guide/creating-a-project.html#vue-create
+[`vue serve`]: https://next.cli.vuejs.org/guide/cli-service.html#vue-cli-service-serve
+[repository template]: https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
 [static site]: https://vue-project-template.jonlabelle.com
