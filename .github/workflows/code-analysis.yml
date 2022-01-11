@@ -1,14 +1,12 @@
-name: code quality
+name: code analysis
 
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-
   schedule:
-    - cron: "50 6 * * 1" # every Monday at 06:50 UTC
-
+    - cron: "50 6 * * 1" # Every Monday at 06:50 UTC
   workflow_dispatch:
 
 jobs:

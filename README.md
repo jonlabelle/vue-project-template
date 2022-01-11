@@ -2,7 +2,7 @@
 
 [![ci](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/ci.yml)
 [![cd](https://github.com/jonlabelle/vue-project-template/actions/workflows/cd.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/cd.yml)
-[![code quality](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-quality.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-quality.yml)
+[![code analysis](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-analysis.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-analysis.yml)
 
 > A [Vue.js](https://vuejs.org) project (boilerplate) template.
 
