@@ -100,7 +100,7 @@ npm run lint
 To run the site in Docker:
 
 1. Build the image: `npm run docker-build`
-2. Start the container: `npm run docker-run`
+2. Start the container: `npm run docker`
 3. Open your browser to: <http://localhost:8080>
 
 [npm package]: https://www.npmjs.com/package/@vue/cli

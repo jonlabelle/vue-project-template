@@ -25,8 +25,8 @@
     "format-check-debug": "prettier . --check --loglevel debug",
     "format-check": "prettier . --check",
     "format": "prettier --write .",
-    "docker-build": "docker build --no-cache --file .docker/Dockerfile --tag vue-project-template:latest .",
-    "docker-run": "docker run --rm --name vue-project-template --publish 8080:80 vue-project-template:latest"
+    "docker-build": "docker build --no-cache --file .docker/Dockerfile --tag vue-project-template:dev .",
+    "docker": "docker run --rm --name vue-project-template --publish 8080:80 vue-project-template:dev"
   },
   "dependencies": {
     "axios": "^0.24.0",

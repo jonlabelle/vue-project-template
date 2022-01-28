@@ -1,5 +1,4 @@
 # directories
-/.docker/
 /.git/
 /.github/
 /.idea/
@@ -11,8 +10,5 @@
 
 # files
 **/*.md
-.*ignore
-.prettierrc
-Dockerfile*
 LICENSE.txt
 npm-debug.log
