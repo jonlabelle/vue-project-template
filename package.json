@@ -27,7 +27,7 @@
     "format-check": "prettier . --check '!**/*.{yml,md}'",
     "format-check-debug": "prettier . --check --loglevel debug '!**/*.{yml,md}'",
     "docker-build": "docker build --no-cache --file .docker/Dockerfile --tag vue-project-template:dev .",
-    "docker": "docker run --rm --name vue-project-template --publish 8080:80 vue-project-template:dev"
+    "docker": "docker run --rm --name vue-project-template-dev --publish 8080:80 vue-project-template:dev"
   },
   "dependencies": {
     "axios": "^0.25.0",
