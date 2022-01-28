@@ -5,22 +5,22 @@
 </template>
 
 <script>
-  export default {
-    name: "FooterComponent",
-    props: {
-      year: {
-        type: Number,
-        required: false,
-        default: new Date().getFullYear()
-      }
+export default {
+  name: "FooterComponent",
+  props: {
+    year: {
+      type: Number,
+      required: false,
+      default: new Date().getFullYear()
     }
-  };
+  }
+};
 </script>
 
 <style lang="scss">
-  .footer {
-    &__copy {
-      padding: 20px;
-    }
+.footer {
+  &__copy {
+    padding: 20px;
   }
+}
 </style>

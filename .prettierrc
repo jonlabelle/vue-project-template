@@ -4,12 +4,9 @@
   "tabWidth": 2,
   "trailingComma": "none",
   "proseWrap": "always",
-  "bracketSameLine": true,
-  "arrowParens": "always",
-  "vueIndentScriptAndStyle": true,
   "overrides": [
     {
-      "files": ["*.vue"],
+      "files": ["*.vue", "*.html"],
       "options": {
         "printWidth": 240
       }

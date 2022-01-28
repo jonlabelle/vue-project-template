@@ -6,13 +6,13 @@
   </div>
 </template>
 <script>
-  export default {
-    props: {
-      resource: {
-        type: String,
-        required: false,
-        default: "resource"
-      }
+export default {
+  props: {
+    resource: {
+      type: String,
+      required: false,
+      default: "resource"
     }
-  };
+  }
+};
 </script>
