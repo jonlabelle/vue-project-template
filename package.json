@@ -22,9 +22,9 @@
     "lint": "vue-cli-service lint",
     "lint-fix": "vue-cli-service lint --fix",
     "test": "vue-cli-service test:unit",
-    "format-check-debug": "prettier . --check --loglevel debug",
-    "format-check": "prettier . --check",
-    "format": "prettier --write .",
+    "format-check-debug": "prettier . --check --loglevel debug '!**/*.{yml,md}'",
+    "format-check": "prettier . --check '!**/*.{yml,md}'",
+    "format": "prettier --write '!**/*.{yml,md}'",
     "docker-build": "docker build --no-cache --file .docker/Dockerfile --tag vue-project-template:dev .",
     "docker": "docker run --rm --name vue-project-template --publish 8080:80 vue-project-template:dev"
   },
