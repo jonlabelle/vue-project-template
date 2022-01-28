@@ -2,8 +2,9 @@ FROM node:lts-alpine as builder
 
 WORKDIR /app
 
+COPY .npmrc .
 COPY package*.json .
-RUN npm ci
+RUN npm install
 
 COPY . .
 RUN npm run build
