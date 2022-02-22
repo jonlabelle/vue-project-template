@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: "FooterComponent",
+  name: 'FooterComponent',
   computed: {
     now() {
-      return Date.now();
-    }
-  }
-};
+      return Date.now()
+    },
+  },
+}
 </script>
 
 <style lang="scss">

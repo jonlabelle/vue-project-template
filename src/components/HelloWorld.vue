@@ -64,11 +64,11 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   props: {
-    msg: { type: String, default: "", required: false }
-  }
-};
+    msg: { type: String, default: '', required: false },
+  },
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

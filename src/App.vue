@@ -8,25 +8,25 @@
 </template>
 
 <script>
-import CreatedUsing from "@/components/CreatedUsing";
-import FooterComponent from "@/components/FooterComponent";
-import NotificationContainer from "@/components/NotificationContainer.vue";
+import CreatedUsing from '@/components/CreatedUsing'
+import FooterComponent from '@/components/FooterComponent'
+import NotificationContainer from '@/components/NotificationContainer.vue'
 
 export default {
   components: { FooterComponent, CreatedUsing, NotificationContainer },
   mounted() {
     const notification = {
-      type: "success",
-      message: "Example notification that will dissappear after 5 seconds."
-    };
+      type: 'success',
+      message: 'Example notification that will dissappear after 5 seconds.',
+    }
 
-    this.$store.dispatch("notification/add", notification, { root: true });
-  }
-};
+    this.$store.dispatch('notification/add', notification, { root: true })
+  },
+}
 </script>
 
 <style lang="scss">
-@import "./scss/main.scss";
+@import './scss/main.scss';
 
 #app {
   @include flex-center(100%);

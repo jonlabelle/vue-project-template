@@ -11,8 +11,8 @@ export default {
     resource: {
       type: String,
       required: false,
-      default: "resource"
-    }
-  }
-};
+      default: 'resource',
+    },
+  },
+}
 </script>

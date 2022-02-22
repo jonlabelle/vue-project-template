@@ -6,12 +6,12 @@
 
 <script>
 export default {
-  name: "CreatedUsing"
-};
+  name: 'CreatedUsing',
+}
 </script>
 
 <style lang="scss">
-@import "src/scss/mixins/content_blocks";
+@import 'src/scss/mixins/content_blocks';
 
 .created-using {
   border: 1px solid rgba(66, 185, 131, 0.29);

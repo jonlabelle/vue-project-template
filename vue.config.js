@@ -1,4 +1,4 @@
-const { defineConfig } = require("@vue/cli-service");
+const { defineConfig } = require('@vue/cli-service')
 
 /**
  * @type {import('@vue/cli-service').ProjectOptions}
@@ -6,14 +6,14 @@ const { defineConfig } = require("@vue/cli-service");
  */
 module.exports = defineConfig({
   transpileDependencies: true,
-  assetsDir: "assets",
+  assetsDir: 'assets',
   productionSourceMap: false,
 
   /**
    * @type {import('@vue/cli-service').ProjectOptions.css}
    */
   css: {
-    sourceMap: false
+    sourceMap: false,
 
     //
     // Passing options to pre-processor loaders
@@ -36,5 +36,5 @@ module.exports = defineConfig({
     //    additionalData: `@import "~@/variables.scss";`
     //  }
     //}
-  }
-});
+  },
+})
