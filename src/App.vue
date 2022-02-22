@@ -1,9 +1,9 @@
 <template>
   <div class="imposter">
-    <NotificationContainer />
+    <notification-container />
     <router-view />
     <created-using />
-    <FooterComponent :year="year" />
+    <footer-component />
   </div>
 </template>
 
@@ -14,11 +14,6 @@ import NotificationContainer from "@/components/NotificationContainer.vue";
 
 export default {
   components: { FooterComponent, CreatedUsing, NotificationContainer },
-  data() {
-    return {
-      year: new Date().getFullYear()
-    };
-  },
   mounted() {
     const notification = {
       type: "success",

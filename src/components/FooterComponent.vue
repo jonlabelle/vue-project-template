@@ -1,17 +1,15 @@
 <template>
   <div class="footer">
-    <p class="footer__copy">Copyright &copy; {{ year }}.</p>
+    <p class="footer__copy">Copyright &copy; {{ now }}.</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "FooterComponent",
-  props: {
-    year: {
-      type: Number,
-      required: false,
-      default: new Date().getFullYear()
+  computed: {
+    now() {
+      return Date.now();
     }
   }
 };
