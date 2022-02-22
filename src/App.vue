@@ -17,9 +17,9 @@ export default {
   mounted() {
     const notification = {
       type: 'success',
-      message: 'Example notification that will dissappear after 5 seconds.',
+      message: 'Example notification that will dissappear after 10 seconds.',
+      duration: 1000 * 10,
     }
-
     this.$store.dispatch('notification/add', notification, { root: true })
   },
 }

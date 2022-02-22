@@ -66,7 +66,11 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: { type: String, default: '', required: false },
+    msg: {
+      type: String,
+      default: '',
+      required: false,
+    },
   },
 }
 </script>
