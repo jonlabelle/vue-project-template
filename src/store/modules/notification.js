@@ -3,8 +3,8 @@ export const notificationTypes = {
   allNotifications: 'allNotifications',
   addNotification: 'addNotification',
   removeNotification: 'removeNotification',
-  ADD: 'ADD',
-  REMOVE: 'REMOVE',
+  ADD_NOTIFICATION: 'ADD_NOTIFICATION',
+  REMOVE_NOTIFICATION: 'REMOVE_NOTIFICATION',
 }
 
 export const namespaced = true
@@ -22,14 +22,14 @@ export const getters = {
 }
 
 export const mutations = {
-  [notificationTypes.ADD](state, payload) {
+  [notificationTypes.ADD_NOTIFICATION](state, payload) {
     state.notifications.push({
       ...payload,
       id: nextId++,
     })
   },
 
-  [notificationTypes.REMOVE](state, payload) {
+  [notificationTypes.REMOVE_NOTIFICATION](state, payload) {
     state.notifications = state.notifications.filter(
       (notification) => notification.id !== payload.id
     )
@@ -38,10 +38,10 @@ export const mutations = {
 
 export const actions = {
   addNotification({ commit }, payload) {
-    commit(notificationTypes.ADD, payload)
+    commit(notificationTypes.ADD_NOTIFICATION, payload)
   },
 
   removeNotification({ commit }, payload) {
-    commit(notificationTypes.REMOVE, payload)
+    commit(notificationTypes.REMOVE_NOTIFICATION, payload)
   },
 }
