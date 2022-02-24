@@ -6,6 +6,7 @@
 
 <script>
 import { mapActions } from 'vuex'
+import { notificationTypes as types } from '@/store/modules/notification'
 
 export default {
   props: {
@@ -20,7 +21,7 @@ export default {
     }
   },
   mounted() {
-    this.timeout = setTimeout(() => this.remove(this.notification), this.notification.duration)
+    this.timeout = setTimeout(() => this.removeNotification(this.notification), this.notification.duration)
   },
   beforeUnmount() {
     clearTimeout(this.timeout)
@@ -30,7 +31,7 @@ export default {
       return `alert-${this.notification.type}`
     },
   },
-  methods: mapActions('notification', ['remove']),
+  methods: mapActions(types.notification, [types.removeNotification]),
 }
 </script>
 

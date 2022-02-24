@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 
-import * as notification from '@/store/modules/notification.js'
+import * as notification from '@/store/modules/notification'
 
 export default createStore({
   state: {},

@@ -11,16 +11,21 @@
 import CreatedUsing from '@/components/CreatedUsing'
 import FooterComponent from '@/components/FooterComponent'
 import NotificationContainer from '@/components/NotificationContainer.vue'
+import { notificationTypes as types } from '@/store/modules/notification'
 
 export default {
-  components: { FooterComponent, CreatedUsing, NotificationContainer },
+  components: {
+    FooterComponent,
+    CreatedUsing,
+    NotificationContainer,
+  },
   mounted() {
     const notification = {
       type: 'success',
-      message: 'Example notification that will dissappear after 10 seconds.',
-      duration: 1000 * 10,
+      message: 'This notification will dissappear after 5 seconds...',
+      duration: 1000 * 5,
     }
-    this.$store.dispatch('notification/add', notification, { root: true })
+    this.$store.dispatch(`${types.notification}/${types.addNotification}`, notification, { root: true })
   },
 }
 </script>

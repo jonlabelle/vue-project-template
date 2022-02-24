@@ -1,31 +1,47 @@
+export const notificationTypes = {
+  notification: 'notification',
+  allNotifications: 'allNotifications',
+  addNotification: 'addNotification',
+  removeNotification: 'removeNotification',
+  ADD: 'ADD',
+  REMOVE: 'REMOVE',
+}
+
 export const namespaced = true
 
-export const state = {
+export const state = () => ({
   notifications: [],
-}
+})
 
 let nextId = 1
 
+export const getters = {
+  allNotifications(state) {
+    return state.notifications
+  },
+}
+
 export const mutations = {
-  PUSH(state, notification) {
+  [notificationTypes.ADD](state, payload) {
     state.notifications.push({
-      ...notification,
+      ...payload,
       id: nextId++,
     })
   },
 
-  DELETE(state, notificationToRemove) {
+  [notificationTypes.REMOVE](state, payload) {
     state.notifications = state.notifications.filter(
-      (notification) => notification.id !== notificationToRemove.id
+      (notification) => notification.id !== payload.id
     )
   },
 }
 
 export const actions = {
-  add({ commit }, notification) {
-    commit('PUSH', notification)
+  addNotification({ commit }, payload) {
+    commit(notificationTypes.ADD, payload)
   },
-  remove({ commit }, notificationToRemove) {
-    commit('DELETE', notificationToRemove)
+
+  removeNotification({ commit }, payload) {
+    commit(notificationTypes.REMOVE, payload)
   },
 }
