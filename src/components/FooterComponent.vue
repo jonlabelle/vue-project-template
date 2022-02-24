@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p class="footer__copy">Copyright &copy; {{ now }}.</p>
+    <p class="footer__copy">Copyright &copy; {{ year }}</p>
   </div>
 </template>
 
@@ -8,8 +8,8 @@
 export default {
   name: 'FooterComponent',
   computed: {
-    now() {
-      return Date.now()
+    year() {
+      return new Date().getFullYear()
     },
   },
 }

@@ -18,16 +18,16 @@
   "scripts": {
     "serve": "vue-cli-service serve --mode development --port 8080",
     "build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint",
     "build-dev": "vue-cli-service build --mode development",
     "build-report": "vue-cli-service build --mode production --report",
-    "lint": "vue-cli-service lint",
-    "lint-fix": "vue-cli-service lint --fix",
-    "test": "vue-cli-service test:unit",
     "format": "prettier . --write '!**/*.{yml,md}'",
     "format-check": "prettier . --check '!**/*.{yml,md}'",
     "format-check-debug": "prettier . --check --loglevel debug '!**/*.{yml,md}'",
-    "docker-build": "docker build --no-cache --file .docker/Dockerfile --tag vue-project-template:dev .",
-    "docker": "docker run --rm --name vue-project-template-dev --publish 8080:80 vue-project-template:dev"
+    "lint-fix": "vue-cli-service lint --fix",
+    "test": "vue-cli-service test:unit",
+    "docker": "docker run --rm --name vue-project-template-dev --publish 8080:80 vue-project-template:dev",
+    "docker-build": "docker build --no-cache --file .docker/Dockerfile --tag vue-project-template:dev ."
   },
   "dependencies": {
     "axios": "^0.25.0",
@@ -41,6 +41,8 @@
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "@fullhuman/vue-cli-plugin-purgecss": "~4.1.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-pwa": "~5.0.0",
