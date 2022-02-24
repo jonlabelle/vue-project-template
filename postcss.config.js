@@ -1,4 +1,5 @@
 // Used by @fullhuman/postcss-purgecss
+// https://purgecss.com/configuration.html
 
 const IN_PRODUCTION = process.env.NODE_ENV === 'production'
 
@@ -18,15 +19,21 @@ module.exports = {
             ) || []
           )
         },
-        keyframes: true,
-        variables: true,
-        whitelist: ['body', 'html'],
-        safelist: [
-          /-(leave|enter|appear)(|-(to|from|active))$/,
-          /^(?!(|.*?:)cursor-move).+-move$/,
-          /^router-link(|-exact)-active$/,
-          /data-v-.*/,
-        ],
+        keyframes: true, // remove unused animation keyframes
+        variables: true, // remove unused CSS variables
+        safelist: {
+          // Array that can take a string or a regex
+          standard: [
+            /-(leave|enter|appear)(|-(to|from|active))$/,
+            /^(?!(|.*?:)cursor-move).+-move$/,
+            /^router-link(|-exact)-active$/,
+            /data-v-.*/,
+          ],
+          // Safelist whole selectors if any part of that selector matches aregular expression
+          greedy: [
+            /alert/, // bootstrap alert styles
+          ],
+        },
       }),
   ],
 }
