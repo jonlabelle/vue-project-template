@@ -18,13 +18,12 @@
   "scripts": {
     "serve": "vue-cli-service serve --mode development --port 8080",
     "build": "vue-cli-service build --mode production",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint --fix",
     "build-dev": "vue-cli-service build --mode development",
     "build-report": "vue-cli-service build --mode production --report",
     "format": "prettier . --write '!**/*.{yml,md}'",
     "format-check": "prettier . --check '!**/*.{yml,md}'",
     "format-check-debug": "prettier . --check --loglevel debug '!**/*.{yml,md}'",
-    "lint-fix": "vue-cli-service lint --fix",
     "test": "vue-cli-service test:unit",
     "docker": "docker run --rm --name vue-project-template-dev --publish 8080:80 vue-project-template:dev",
     "docker-build": "docker build --no-cache --file .docker/Dockerfile --tag vue-project-template:dev ."

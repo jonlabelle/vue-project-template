@@ -20,16 +20,16 @@ export default {
       timeout: null,
     }
   },
+  computed: {
+    notificationTypeClass() {
+      return `alert-${this.notification.type}`
+    },
+  },
   mounted() {
     this.timeout = setTimeout(() => this.removeNotification(this.notification), this.notification.duration)
   },
   beforeUnmount() {
     clearTimeout(this.timeout)
-  },
-  computed: {
-    notificationTypeClass() {
-      return `alert-${this.notification.type}`
-    },
   },
   methods: mapActions(types.notification, [types.removeNotification]),
 }

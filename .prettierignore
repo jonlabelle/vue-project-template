@@ -3,3 +3,4 @@ package-lock.json
 node_modules
 .docker
 public/img
+tmp
