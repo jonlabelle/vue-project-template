@@ -28,10 +28,6 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
 
-      - name: Install global @vue/cli
-        run: npm install -g @vue/cli@5.0.1
-        
-
       - name: Install package dependencies
         run: npm install
 
