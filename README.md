@@ -68,7 +68,7 @@ a new project via [`vue create`], or instantly prototype new ideas via [`vue
 serve`].
 
 ```bash
-npm install -g @vue/cli
+npm install -g @vue/cli@next
 ```
 
 ### Install dependencies
