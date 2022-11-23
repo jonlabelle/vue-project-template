@@ -4,7 +4,7 @@
 [![cd](https://github.com/jonlabelle/vue-project-template/actions/workflows/cd.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/cd.yml)
 [![code analysis](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-analysis.yml/badge.svg)](https://github.com/jonlabelle/vue-project-template/actions/workflows/code-analysis.yml)
 
-> A [Vue.js](https://vuejs.org) project (boilerplate) template.
+> A [Vue.js](https://vuejs.org) boilerplate project template.
 
 ## Demo
 
