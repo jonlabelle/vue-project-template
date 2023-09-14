@@ -12,6 +12,9 @@
 // 3. Include remainder of required Bootstrap stylesheets
 @import '~bootstrap/scss/variables';
 
+// Import dark vars first (https://stackoverflow.com/a/75877376)
+@import "~bootstrap/scss/_variables-dark.scss";
+
 // 4. Include any default map overrides here
 
 // 5. Include remainder of required parts
