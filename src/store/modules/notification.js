@@ -1,3 +1,5 @@
+import { reactive } from 'vue'
+
 export const notificationTypes = {
   notification: 'notification',
   allNotifications: 'allNotifications',
@@ -9,7 +11,7 @@ export const notificationTypes = {
 
 export const namespaced = true
 
-export const state = () => ({
+export const state = reactive({
   notifications: [],
 })
 
