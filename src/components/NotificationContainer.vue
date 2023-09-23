@@ -1,22 +1,20 @@
 <template>
   <div class="notification-container">
-    <NotificationBar v-for="notification in allNotifications" :key="notification.id" :notification="notification" />
+    <NotificationBar
+      v-for="notification in allNotifications"
+      :key="notification.id"
+      :notification="notification"
+    />
   </div>
 </template>
 
-<script>
-import { mapGetters } from 'vuex'
-import { notificationTypes as types } from '@/store/modules/notification'
+<script setup>
+import { computed } from 'vue'
+import { useNotificationStore } from '@/stores/notification'
 import NotificationBar from '@/components/NotificationBar.vue'
 
-export default {
-  components: {
-    NotificationBar,
-  },
-  computed: {
-    ...mapGetters(types.notification, [types.allNotifications]),
-  },
-}
+const notificationStore = useNotificationStore()
+const allNotifications = computed(() => notificationStore.allNotificaions)
 </script>
 
 <style scoped>

@@ -1,30 +1,24 @@
-<template>
-  <div class="home">
-    <notification-container />
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
-</template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import { notificationTypes as types } from '@/store/modules/notification'
+<script setup>
+import { onMounted } from 'vue'
+import TheWelcome from '../components/TheWelcome.vue'
 import NotificationContainer from '@/components/NotificationContainer.vue'
+import { useNotificationStore } from '@/stores/notification'
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-    NotificationContainer,
-  },
-  mounted() {
-    const notification = {
-      type: 'success',
-      message: 'This notification will dissappear after 5 seconds...',
-      duration: 1000 * 5,
-    }
-    this.$store.dispatch(`${types.notification}/${types.addNotification}`, notification, { root: true })
-  },
-}
+const notificationStore = useNotificationStore()
+
+onMounted(() => {
+  const notification = {
+    type: 'success',
+    message: 'This notification will dissappear after 5 seconds...',
+    duration: 1000 * 5
+  }
+  notificationStore.addNotication(notification)
+})
 </script>
+
+<template>
+  <main>
+    <TheWelcome />
+    <NotificationContainer />
+  </main>
+</template>

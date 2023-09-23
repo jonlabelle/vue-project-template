@@ -4,35 +4,36 @@
   </div>
 </template>
 
-<script>
-import { mapActions } from 'vuex'
-import { notificationTypes as types } from '@/store/modules/notification'
+<script setup>
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { useNotificationStore } from '@/stores/notification'
 
-export default {
-  props: {
-    notification: {
-      type: Object,
-      required: true,
-    },
-  },
-  data() {
-    return {
-      timeout: null,
+const notificationStore = useNotificationStore()
+
+const props = defineProps({
+  notification: {
+    type: Object,
+    required: true,
+    default() {
+      return { id: 0, message: '', type: '', duration: 0 }
     }
-  },
-  computed: {
-    notificationTypeClass() {
-      return `alert-${this.notification.type}`
-    },
-  },
-  mounted() {
-    this.timeout = setTimeout(() => this.removeNotification(this.notification), this.notification.duration)
-  },
-  beforeUnmount() {
-    clearTimeout(this.timeout)
-  },
-  methods: mapActions(types.notification, [types.removeNotification]),
-}
+  }
+})
+
+const timeout = ref(null)
+
+const notificationTypeClass = computed(() => `alert-${props.notification.type}`)
+
+onMounted(() => {
+  timeout.value = setTimeout(
+    () => notificationStore.removeNotification(props.notification),
+    props.notification.duration
+  )
+})
+
+onBeforeUnmount(() => {
+  window.clearTimeout(timeout)
+})
 </script>
 
 <style scoped>
