@@ -17,8 +17,8 @@ import TheFooter from './components/TheFooter.vue'
       </nav>
     </div>
   </header>
-  <TheFooter></TheFooter>
   <RouterView />
+  <TheFooter></TheFooter>
 </template>
 
 <style scoped>
