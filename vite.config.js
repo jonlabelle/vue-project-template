@@ -10,13 +10,17 @@ export default defineConfig({
   server: {
     port: 8080
   },
-  plugins: [
-    vue(),
-    basicSsl()
-  ],
+  plugins: [vue(), basicSsl()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/scss/global.scss";`
+      }
     }
   }
 })
