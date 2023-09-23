@@ -21,7 +21,7 @@ to replace the following configuration items with your own.
 {
   "name": "vue-project-template",
   "description": "A Vue.js project (boilerplate) template.",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "license": "MIT",
   "author": "Jon LaBelle",
@@ -34,7 +34,7 @@ to replace the following configuration items with your own.
 }
 ```
 
-**[LICENSE.txt](LICENSE.txt)**
+**[LICENSE](LICENSE)**
 
 ```text
 Copyright (c) Jon LaBelle
@@ -43,7 +43,7 @@ Copyright (c) Jon LaBelle
 **[CHANGELOG.md](CHANGELOG.md)**
 
 ```md
-## 0.1.0
+## 2.0.0
 
 **Release date:** unreleased
 
@@ -58,44 +58,37 @@ Copyright (c) Jon LaBelle
 - ...
 ```
 
-## Project setup
+## Project Setup
 
-### Install @vue/cli
-
-The [Vue CLI] \(`@vue/cli`\) is a globally installed [npm package] and provides
-the `vue` command in your terminal. It provides the ability to quickly scaffold
-a new project via [`vue create`], or instantly prototype new ideas via [`vue
-serve`].
-
-```bash
-npm install -g @vue/cli@next
-```
-
-### Install dependencies
-
-```bash
+```console
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compile and Hot-Reload for Development
 
-```bash
-npm run serve
+```console
+npm run dev
 ```
 
-### Compile and minify for production
+### Compile and Minify for Production
 
-```bash
+```console
 npm run build
 ```
 
-### Lint and fix files
+### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```bash
+```console
+npm run test:unit
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```console
 npm run lint
 ```
 
-### Docker
+## Docker
 
 To run the site in Docker:
 
