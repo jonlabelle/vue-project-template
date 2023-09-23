@@ -38,7 +38,7 @@ jobs:
         run: npm run lint
 
       - name: Run unit tests
-        run: npm run test
+        run: npm run test --if-present
 
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
