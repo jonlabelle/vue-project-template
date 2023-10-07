@@ -13,14 +13,7 @@ export default defineConfig({
   plugins: [vue(), basicSsl()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    }
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "@/scss/global.scss";`
-      }
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
 })

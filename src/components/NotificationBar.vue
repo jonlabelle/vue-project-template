@@ -1,6 +1,6 @@
 <template>
   <div class="notification-bar alert" :class="notificationTypeClass" role="alert">
-    {{ notification.message }}
+    <div>{{ notification.message }}</div>
   </div>
 </template>
 
