@@ -3,8 +3,7 @@
     <NotificationBar
       v-for="notification in allNotifications"
       :key="notification.id"
-      :notification="notification"
-    />
+      :notification="notification" />
   </div>
 </template>
 
