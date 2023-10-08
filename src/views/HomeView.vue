@@ -12,7 +12,7 @@ onMounted(() => {
     message: 'This notification will dissappear after 5 seconds...',
     duration: 1000 * 5
   }
-  notificationStore.addNotication(notification)
+  notificationStore.addNotification(notification)
 })
 </script>
 

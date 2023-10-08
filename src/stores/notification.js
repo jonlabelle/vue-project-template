@@ -8,11 +8,11 @@ export const useNotificationStore = defineStore('notification', {
   }),
 
   getters: {
-    allNotificaions: (state) => state.notifications
+    allNotifications: (state) => state.notifications
   },
 
   actions: {
-    addNotication(payload) {
+    addNotification(payload) {
       this.notifications.push({
         ...payload,
         id: nextId++

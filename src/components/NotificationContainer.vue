@@ -13,7 +13,7 @@ import { useNotificationStore } from '@/stores/notification'
 import NotificationBar from '@/components/NotificationBar.vue'
 
 const notificationStore = useNotificationStore()
-const allNotifications = computed(() => notificationStore.allNotificaions)
+const allNotifications = computed(() => notificationStore.allNotifications)
 </script>
 
 <style scoped>
