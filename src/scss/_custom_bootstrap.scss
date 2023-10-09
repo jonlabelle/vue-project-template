@@ -2,13 +2,18 @@
 // Option B: Include parts of Bootstrap
 // See: https://getbootstrap.com/docs/5.2/customize/sass/#importing
 
+// Import all of Bootstrap's CSS
+//@import 'node_modules/bootstrap/scss/bootstrap';
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import 'node_modules/bootstrap/scss/functions';
 
 // 2. Include any default variable overrides here.
 //    Variable overrides must come after our functions are imported, but before the rest of the imports.
-//$body-bg: #000;
-//$body-color: #fff;
+//$body-color: #333;
+//$body-bg: #fff;
+//$border-radius: .4rem;
+//$success: #7952b3;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import 'node_modules/bootstrap/scss/variables';
@@ -30,6 +35,13 @@
 @import 'node_modules/bootstrap/scss/grid';
 @import 'node_modules/bootstrap/scss/helpers';
 @import 'node_modules/bootstrap/scss/alert';
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/transitions";
+@import "bootstrap/scss/modal"; // Requires transitions
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/offcanvas"; // Requires transitions
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import 'node_modules/bootstrap/scss/utilities/api';
